@@ -46,8 +46,9 @@ def quotations():
     quote = request.args.get('quote')
     period = request.args.get('period')
     interval = request.args.get('interval')
-    data = StockMarket(quote,period,interval).getData()
+    data = StockMarket(quote, period, interval).getData()
     return data
+    # return data
 
 
 # API start
